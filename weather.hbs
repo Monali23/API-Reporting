@@ -1,0 +1,52 @@
+<table>
+    {{#with coord}}
+        <tr>
+            <td>{{lon}}</td>
+            <td>{{lat}}</td>
+        </tr>
+    {{/with}}
+    {{#each weather}}
+        <tr>
+            <td>{{id}}</td>
+            <td>{{main}}</td>
+            <td>{{description}}</td>
+            <td>{{icon}}</td>
+        </tr>   
+    {{/each}}
+        <td>{{base}}</td>
+    {{#with main}}
+        <tr>
+            <td>{{temp}}</td>
+            <td>{{pressure}}</td>
+            <td>{{humidity}}</td>
+            <td>{{temp_min}}</td>
+            <td>{{temp_max}}</td>
+        </tr>
+    {{/with}}
+        <td>{{visibility}}</td>
+    {{#with wind}}
+        <tr>
+            <td>{{speed}}</td>
+            <td>{{deg}}</td>
+        </tr>
+    {{/with}}
+    {{#with clouds}}
+        <tr>
+            <td>{{all}}</td>
+        </tr>
+    {{/with}}
+        <td>{{dt}}</td>
+    {{#with sys}}
+        <tr>
+            <td>{{type}}</td>
+            <td>{{id}}</td>
+            <td>{{message}}</td>
+            <td>{{country}}</td>
+            <td>{{sunrise}}</td>
+            <td>{{sunset}}</td>
+        </tr>
+    {{/with}}
+        <td>{{id}}</td>
+        <td>{{name}}</td>
+        <td>{{cod}}</td>
+</table>
