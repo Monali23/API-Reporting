@@ -3,7 +3,7 @@
   "version": "1.0.0",
   "main": "weather.js",
   "dependencies": {
-    "axios": "^0.19.2",
+    "axios": "^0.21.1",
     "fs": "^0.0.1-security",
     "handlebars": "^4.7.6",
     "request": "^2.88.2",
